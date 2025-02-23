@@ -1,13 +1,8 @@
 package com.kotletkin.dev.strategy;
 
 public abstract class Warrior {
-    private final WeaponBehavior weaponBehavior;
-    private final SoundBehavior soundBehavior;
-
-    public Warrior(WeaponBehavior weaponBehavior, SoundBehavior soundBehavior) {
-        this.weaponBehavior = weaponBehavior;
-        this.soundBehavior = soundBehavior;
-    }
+    protected WeaponBehavior weaponBehavior;
+    protected SoundBehavior soundBehavior;
 
     public void performWeapon() {
         weaponBehavior.doHit();
@@ -18,4 +13,12 @@ public abstract class Warrior {
     }
 
     public abstract void display();
+
+    public void setWeaponBehavior(WeaponBehavior weaponBehavior) {
+        this.weaponBehavior = weaponBehavior;
+    }
+
+    public void setSoundBehavior(SoundBehavior soundBehavior) {
+        this.soundBehavior = soundBehavior;
+    }
 }

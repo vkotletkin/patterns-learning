@@ -1,12 +1,11 @@
 package com.kotletkin.dev.strategy.human;
 
-import com.kotletkin.dev.strategy.SoundBehavior;
 import com.kotletkin.dev.strategy.Warrior;
-import com.kotletkin.dev.strategy.WeaponBehavior;
 
 public class Human extends Warrior {
-    public Human(WeaponBehavior weaponBehavior, SoundBehavior soundBehavior) {
-        super(weaponBehavior, soundBehavior);
+    public Human() {
+        this.soundBehavior = new SoundHuman();
+        this.weaponBehavior = new HitHuman();
     }
 
     @Override

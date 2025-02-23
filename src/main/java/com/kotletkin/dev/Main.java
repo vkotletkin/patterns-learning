@@ -10,14 +10,20 @@ import com.kotletkin.dev.strategy.skeleton.SoundSkeleton;
 
 public class Main {
     public static void main(String[] args) {
-        Warrior skeleton = new Skeleton(new HitSkeleton(), new SoundSkeleton());
+
+        /*
+        Паттерн Стратегия определяет семейство алгоритмов, инкапсулирует каждый из них и обеспечивает их взаимозаменяемость.
+        Он позволяет модифицировать алгоритмы независимо от их использования на стороне клиента
+        */
+
+        Warrior skeleton = new Skeleton();
         skeleton.performSound();
         skeleton.performWeapon();
         skeleton.display();
 
         System.out.println();
 
-        Warrior human = new Human(new HitHuman(), new SoundHuman());
+        Warrior human = new Human();
         human.performSound();
         human.performWeapon();
         human.display();
