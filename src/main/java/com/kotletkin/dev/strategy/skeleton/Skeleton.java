@@ -5,7 +5,6 @@ import com.kotletkin.dev.strategy.Warrior;
 import com.kotletkin.dev.strategy.WeaponBehavior;
 
 public class Skeleton extends Warrior {
-
     public Skeleton(WeaponBehavior weaponBehavior, SoundBehavior soundBehavior) {
         super(weaponBehavior, soundBehavior);
     }
@@ -14,6 +13,4 @@ public class Skeleton extends Warrior {
     public void display() {
         System.out.println("I'am skeleton!");
     }
-
-
 }
