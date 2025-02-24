@@ -1,12 +1,7 @@
-package com.kotletkin.dev;
+package com.kotletkin.dev.strategy;
 
-import com.kotletkin.dev.strategy.Warrior;
-import com.kotletkin.dev.strategy.human.HitHuman;
 import com.kotletkin.dev.strategy.human.Human;
-import com.kotletkin.dev.strategy.human.SoundHuman;
-import com.kotletkin.dev.strategy.skeleton.HitSkeleton;
 import com.kotletkin.dev.strategy.skeleton.Skeleton;
-import com.kotletkin.dev.strategy.skeleton.SoundSkeleton;
 
 public class Main {
     public static void main(String[] args) {
