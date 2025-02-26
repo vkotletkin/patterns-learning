@@ -23,5 +23,4 @@ public class CatholicChurch {
         supports.firePropertyChange("news", this.news, news);
         this.news = news;
     }
-
 }
