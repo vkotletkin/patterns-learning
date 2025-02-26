@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MissleDetector implements Subject {
-    private Set<Observer> observers;
+    private final Set<Observer> observers;
     private String missleName;
     private String missleX;
     private String missleY;

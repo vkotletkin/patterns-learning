@@ -1,10 +1,10 @@
 package com.kotletkin.dev.observer;
 
 public class Headquarters implements Observer, DisplayMonitor {
+    private final Subject subject;
     private String missleName;
     private String missleX;
     private String missleY;
-    private final Subject subject;
 
     public Headquarters(Subject subject) {
         this.subject = subject;
